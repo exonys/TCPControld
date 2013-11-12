@@ -1,12 +1,15 @@
 package example.TCPControld;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 public class Home extends Activity {
+    private static Context sContext;
+
     /**
      * Called when the activity is first created.
      */
@@ -29,11 +32,19 @@ public class Home extends Activity {
         //Those seem to be best yet
         cellModeSpinner.setSelection(adapter.getPosition("reno"));
         wifiModeSpinner.setSelection(adapter.getPosition("westwood"));
+
+        //Dirty hacks
+        sContext = getApplicationContext();
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.actions, menu);
         return true;
+    }
+
+    //Dirty hacks
+    public static Context getContext() {
+        return sContext;
     }
 }
