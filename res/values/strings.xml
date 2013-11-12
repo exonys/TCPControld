@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TCPControld</string>
+
+    <string-array name="Algs"> <!--Hardcoded for now-->
+        <item>cubic</item>
+        <item>reno</item>
+        <item>bic</item>
+        <item>westwood</item>
+        <item>htcp</item>
+    </string-array>
+</resources>
