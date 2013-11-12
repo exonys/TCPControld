@@ -2,6 +2,7 @@ package example.TCPControld;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -13,7 +14,6 @@ public class Home extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
 
         //Read algs
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -29,5 +29,11 @@ public class Home extends Activity {
         //Those seem to be best yet
         cellModeSpinner.setSelection(adapter.getPosition("reno"));
         wifiModeSpinner.setSelection(adapter.getPosition("westwood"));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.actions, menu);
+        return true;
     }
 }
