@@ -3,6 +3,7 @@ package example.TCPControld;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -35,6 +36,7 @@ public class Home extends Activity {
 
         //Dirty hacks
         sContext = getApplicationContext();
+        Log.v("tcpcontrold", "lr s");
     }
 
     @Override
