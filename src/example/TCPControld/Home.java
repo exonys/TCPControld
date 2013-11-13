@@ -36,7 +36,8 @@ public class Home extends Activity {
 
         //Dirty hacks
         sContext = getApplicationContext();
-        Log.v("tcpcontrold", "lr s");
+
+        Log.v("tcpcontrold", "UI ");
     }
 
     @Override

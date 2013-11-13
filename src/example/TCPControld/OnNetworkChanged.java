@@ -14,6 +14,7 @@ import android.util.Log;
 public class OnNetworkChanged extends BroadcastReceiver {
     @Override
     public void onReceive(Context arg0, Intent arg1) {
+        Log.v("tcpcontrold", "Network Changed");
         Context context = Home.getContext();
         ConnectivityManager cm =
                 (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -24,8 +25,10 @@ public class OnNetworkChanged extends BroadcastReceiver {
             if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI) {
                 //Wifi
                 Log.v("tcpcontrold", "set mode WiFi");
+                RootHelper.ExecuteRootCommand("sysctl -w net.ipv4.tcp_congestion_control=westwood");
             } else {
                 //Cell
+                RootHelper.ExecuteRootCommand("sysctl -w net.ipv4.tcp_congestion_control=rino");
                 Log.v("tcpcontrold", "set mode Cell");
             }
         }
