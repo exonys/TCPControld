@@ -5,15 +5,15 @@
         android:id="@+id/DonateBtn"
         android:icon="@drawable/ic_action_good"
         android:showAsAction="always"
-        android:title="Donate"/>
+        android:title="@string/DonateBtnText"/>
     <item
         android:id="@+id/SaveBtn"
         android:icon="@drawable/ic_action_download"
         android:showAsAction="always"
-        android:title="Save Configuration"/>
+        android:title="@string/SaveBtnText"/>
     <item
         android:id="@+id/RequestRootBtn"
         android:icon="@drawable/ic_action_screen_locked_to_portrait"
         android:showAsAction="always"
-        android:title="Request Root"/>
+        android:title="@string/ReqRootBtnText"/>
 </menu>
