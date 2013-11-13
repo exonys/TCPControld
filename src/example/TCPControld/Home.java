@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -44,6 +45,23 @@ public class Home extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.actions, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.DonateBtn:
+                return true;
+            case R.id.RequestRootBtn:
+                RootHelper.ExecuteRootCommand("free");
+                return true;
+            case R.id.SaveBtn:
+                //Save config
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     //Dirty hacks
