@@ -3,31 +3,44 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-        >
+    >
+
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mobile Data Congestion Control"
-            android:id="@+id/CellHelpText" android:layout_marginTop="25dp" android:layout_marginLeft="5dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MobDataSpinnerHelpText"
+        android:id="@+id/CellHelpText"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:singleLine="false"/>
+
     <Spinner
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:id="@+id/CellModeSpinner" style="@android:style/Widget.Holo.Spinner"
-            android:spinnerMode="dropdown"/>
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/CellModeSpinner"
+        style="@android:style/Widget.Holo.Spinner"
+        android:spinnerMode="dropdown"/>
+
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="WiFi Congestion Control"
-            android:id="@+id/WifiHelpText" android:singleLine="true" android:layout_marginLeft="5dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/WifiSpinnerHelpText"
+        android:id="@+id/WifiHelpText"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"/>
+
     <Spinner
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:id="@+id/WifiModeSpinner" style="@android:style/Widget.Holo.Spinner"
-            android:spinnerMode="dropdown"/>
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/WifiModeSpinner"
+        style="@android:style/Widget.Holo.Spinner"
+        android:spinnerMode="dropdown"/>
+
     <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TCP Fast Open (3.6+)"
-            android:id="@+id/checkBox" android:layout_gravity="left|center_vertical"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TcpFastOpenCheckboxText"
+        android:id="@+id/checkBox"
+        android:layout_gravity="left|center_vertical"/>
 </LinearLayout>
 

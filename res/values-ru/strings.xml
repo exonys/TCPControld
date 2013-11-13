@@ -3,4 +3,7 @@
     <string name="DonateBtnText">Помочь разработке</string>
     <string name="SaveBtnText">Сохранить конфигурацию</string>
     <string name="ReqRootBtnText">Запросить root права</string>
+    <string name="MobDataSpinnerHelpText">Mobile Data Congestion Control</string>
+    <string name="WifiSpinnerHelpText">WiFi Congestion Control</string>
+    <string name="TcpFastOpenCheckboxText">TCP Fast Open</string>
 </resources>

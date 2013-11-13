@@ -4,6 +4,9 @@
     <string name="DonateBtnText">Donate</string>
     <string name="SaveBtnText">Save Configuration</string>
     <string name="ReqRootBtnText">Request Root</string>
+    <string name="MobDataSpinnerHelpText">Mobile Data Congestion Control</string>
+    <string name="WifiSpinnerHelpText">WiFi Congestion Control</string>
+    <string name="TcpFastOpenCheckboxText">TCP Fast Open</string>
 
     <string-array name="Algs"> <!--Hardcoded for now-->
         <item>cubic</item>
